@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2c3e50; /* Dark background */
+    color: #ecf0f1; /* Light text */
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a252f; /* Darker navbar */
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #27ae60; /* Green highlight */
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Options */
+.options {
+    display: flex;
+    gap: 50px;
+}
+
+/* Button Styling */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Admin and Student Button Images */
+.admin {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdN_og07mQX6IDTy2GpZWFZPcFqT6XIyUQEvmKR1rOvJ_9lo2PaSFYGm0k-uGvlbpmiPI&usqp=CAU");
+}
+
+.student {
+    background-image: url("https://thumbs.dreamstime.com/b/student-thinking-problem-thought-bubble-doodle-worker-desk-solution-vector-flat-cartoon-character-isolated-341722899.jpg");
+}
+
+/* Hover Effect */
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Button Text */
+.btn span {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    bottom: 0;
+}
