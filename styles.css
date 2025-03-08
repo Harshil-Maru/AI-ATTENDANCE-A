@@ -14,23 +14,19 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #1a252f; /* Darker navbar */
-    padding: 10px 20px;
+    padding: 15px 20px; /* Increased padding */
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
+/* Logo Styling */
 .logo img {
-    width: 50px;
-    margin-right: 10px;
+    width: 120px;  /* Increased width */
+    height: auto;  /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
 }
 
-.logo span {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #27ae60; /* Green highlight */
+/* Logo Hover Effect */
+.logo img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 /* Main Content */
@@ -42,12 +38,13 @@ body {
     flex-direction: column;
 }
 
+/* Heading */
 h1 {
     font-size: 2rem;
     margin-bottom: 30px;
 }
 
-/* Options */
+/* Role Selection */
 .options {
     display: flex;
     gap: 50px;
